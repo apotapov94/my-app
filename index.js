@@ -1,1 +1,1 @@
-console.log("сэс жэж хуй");
+console.log("тест");
