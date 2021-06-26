@@ -1,0 +1,142 @@
+.title {
+	margin: 50px auto;
+	display: inline-block;
+}
+* {
+	box-sizing: border-box;
+}
+button, input[type=submit] {
+	border:0;
+	outline: none;
+	cursor: pointer;
+}
+.btn {
+	
+	color: #fff;
+	width: 235px;
+	height: 70px;
+	border-radius: 6px;
+	font-size: 1.5rem;
+}
+.btn-primary {
+	background: #ff0000;
+}
+.btn-primary:hover {
+	background: #d00000;
+}
+.btn-secondary {
+	background: #39d070;
+}
+.btn-secondary:hover {
+	background: #22a251;
+}
+
+.popup {
+	max-width: 900px;
+	padding: 50px;
+	background: #fff;
+	position: relative;
+	border-radius: 30px;
+	padding-bottom: 0;
+	transform: translateY(-50px);
+	transition: transform .3s;
+}
+.popup.is-open {
+	transform: translateY(0);
+}
+.popup__wrap {
+	background: rgba(0,0,0, .7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	opacity: 0;
+	transition: opacity .3s;
+	align-items: center;
+	justify-content: center;
+	right: 0;
+	bottom: 0;
+}
+.show {
+	opacity: 1;
+}
+.popup__header h2 {
+	font-weight: 600;
+}
+.popup__body {
+	display: flex;
+}
+.popup__form form {
+	display: flex;
+	flex-direction: column;
+}
+.popup__form label {
+	color: #000;
+	font-weight: 600;
+	font-size: 14px;
+    margin-bottom: 5px;
+}
+.popup__form {
+	width: 350px;
+	flex: none;
+}
+.popup__form input {
+	padding: 15px;
+	border: 1px solid #ababab;
+	border-radius: 5px;
+	outline: none;
+	margin-bottom: 20px;
+}
+.margin-small-bottom {
+	margin-bottom: 10px;
+}
+.margin-bottom {
+	margin-bottom: 20px;
+}
+.popup__form-submit {
+	position: relative;
+}
+.popup__form-submit input {
+	width: 100%;
+	margin-bottom: 0;
+	display: block;
+	text-align: left;
+	border-radius: 10px;
+	padding-left: 50px;
+	background: linear-gradient(180deg, #39d070 92%, #36aa60 92%);
+}
+.popup__form-submit input:hover {
+	background: #39d070;
+}
+.popup__form-submit:before {
+	content: '';
+	display: block;
+	background-image: url('images/pointer.png');
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 40px;
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.popup__close {
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+.files-info {
+	display: flex;
+	justify-content: center;
+	color: #919191;
+	margin-top: 5px;
+}
+.files-info span {
+	margin: 0 5px;
+	font-size: 14px;
+}
+
+.hide-content {
+	display: none;
+}
